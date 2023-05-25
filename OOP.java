@@ -1,10 +1,29 @@
+import java.util.ArrayList;
+import java.util.List;
+
 class OOP{
 
     public static void main( String args[]){
-        User u= new User("Miriam", "silver");
-        User u2= new User("Miriam", "silver");
 
-        System.out.println(u.equals(u2));
+        List <User> users = new ArrayList <User>();
+        users.add(new User("Caleb"));
+        users.add(new User("Miriam"));
+        users.add(new User("Wanjohi"));
+        users.add(new User("Roreen"));
+        users.add(new User("miko"));
+
+        for(int i=0; i<users.size(); i++){
+            System.out.println(users.get(i).get_name());
+        }
+        
+        for(User u: users){
+            System.out.println(u.get_name());
+        }
+
+        // User u= new User("Miriam", "silver");
+        // User u2= new User("Miriam", "silver");
+
+        // System.out.println(u.equals(u2));
 
         // u.set_name ("MIRIAM");
         // u.set_membership (User.Membership.gold);

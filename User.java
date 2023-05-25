@@ -19,12 +19,13 @@ public class User {
    }
 
     //constructors
-    public User(String name, String membership) {
+    public User(String name) {
       set_name(name);
-      set_membership(membership);
+      //set_membership(membership);
     }
 
     public User() {
+      
    }
 
    // encapsulation using setter
