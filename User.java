@@ -7,6 +7,12 @@ public class User {
     //static data members
     static List <User> admins;
 
+    public static void print_data_admins(){
+      for(User u: admins){
+         System.out.println(u.get_name());
+     }
+    }
+
    //method overriding
    public String toString(){
       return get_name() + " "+ get_membership();
