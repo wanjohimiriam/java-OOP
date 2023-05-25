@@ -1,8 +1,17 @@
 public class User {
     private String _name;
-    private String _membership;
+    private String _membership = "bronze";
 
-    // encapsulation using setter
+    //constructors
+    public User(String name, String membership) {
+      set_name(name);
+      set_membership(membership);
+    }
+
+    public User() {
+   }
+
+   // encapsulation using setter
     void set_name(String name){
         _name = name;
     }
