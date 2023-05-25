@@ -5,6 +5,12 @@ class OOP{
 
     public static void main( String args[]){
 
+        Student mirrow = new Student();
+        System.out.println(mirrow.get_verified());
+        mirrow.set_membership("gold");
+        System.out.println(mirrow.get_membership());
+
+
         User.admins = new ArrayList <User>();
         User.admins.add(new User("Caleb"));
         User.admins.add(new User("Miriam"));
@@ -12,7 +18,7 @@ class OOP{
         User.admins.add(new User("Roreen"));
         User.admins.add(new User("miko"));
         
-        User.print_data_admins();
+        //User.print_data_admins();
 
         //generic list
         // List <User> users = new ArrayList <User>();
