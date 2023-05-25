@@ -2,6 +2,22 @@ public class User {
     private String _name;
     private String _membership = "bronze";
 
+   //method overriding
+   public String toString(){
+      return get_name() + " "+ get_membership();
+   }
+
+
+   //overiding equals
+   public boolean equals(User u2){
+      if (get_name() == u2.get_name() 
+      && get_membership()== u2.get_membership()){
+         return true;
+      }else{
+         return false;
+      }
+   }
+
     //constructors
     public User(String name, String membership) {
       set_name(name);
